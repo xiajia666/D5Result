@@ -1,3 +1,15 @@
+// 主要改动点：
+// 使用函数组件 + Hooks：
+//
+// useState 取代 this.state。
+// useEffect 取代生命周期方法 componentDidMount, componentDidUpdate, 和 componentWillUnmount。
+// 类型定义：
+//
+// 定义了 UserDataProps 和 User 接口来指定 props 和用户数据的结构。
+// 异步数据获取：
+//
+// 使用 async/await 替代了 then 语法，代码更加清晰。
+
 import React, { useEffect, useState } from 'react';
 
 interface UserDataProps {
